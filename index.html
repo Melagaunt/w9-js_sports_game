@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Game Challenge</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <audio id="audio_gg">
+    <source src="assets/media/gg.m4a" type="audio/x-m4a">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="audio_niceShot">
+    <source src="assets/media/niceShot.m4a" type="audio/x-m4a">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="audio_niceTry">
+    <source src="assets/media/niceTry.m4a" type="audio/x-m4a">
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+  <div>
+    <h1>My JS Game</h1>
+    <div id="reset-container">
+      <button onclick="playAudio()">SOUND</button>
+      <button id="reset-button" onclick="reset()">RESET</button><br>
+      NUMBER OF RESETS: <span id="num-resets">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="left">
+      <h2>
+        Team 1
+      </h2>
+      <div class="goals">
+        SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
+        GOALS: <span id="teamone-numgoals">0</span>
+      </div>
+      <div>
+        <button id="teamone-shoot-button" onclick="takeShot(1)">SHOOT</button>
+      </div>
+    </div>
+    <div class="right">
+      <h2>
+        Team 2
+      </h2>
+      <div class="goals">
+        SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
+        GOALS: <span id="teamtwo-numgoals">0</span>
+      </div>
+      <div>
+        <button id="teamone-shoot-button" onclick="takeShot(2)">SHOOT</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
